@@ -1,0 +1,11 @@
+@startuml
+
+class UserService {
+    - userRepository: UserRepository
+
+    + createUser(user: User): User
+    + getAllUser(users: List<User>): List<User>
+    + getUserByID(id: Long): User
+}
+
+@enduml

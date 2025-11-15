@@ -1,0 +1,13 @@
+@startuml
+
+class UserController {
+    - userService: UserService
+
+    + getAllUsers(): List<User>
+    + getUserByID(id: Long): User
+    + createUser(user: User): User
+    + updateUser(id: Long, userDetails: User): ResponseEntity<User>
+    + deleteUser(id: Long): ResponseEntity<void>
+}
+
+@enduml
